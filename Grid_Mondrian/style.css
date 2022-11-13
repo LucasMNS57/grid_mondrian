@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --blue: green;
+    --yellow: yellow;
+    --brown: brown;
+    --white: white;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 0;
+}
+/* initialisation des couleurs */
+#blue {
+ background: var(--blue);
+}
+#yellow {
+    background: var(--yellow);
+   }
+#brown {
+    background: var(--brown);
+   }
+#white{
+    background: var(--white);
+}
+#black {
+    background: #000;
+}
+
+body {
+    text-align: center;
+}
+   
+.tableau {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    border: 6px dashed black;
+    width: 39.1em;
+    height: 28.8em;
+    margin: auto;
+    
+}
+/*permet d'initialiser une taille aux colonnes*/
+#gridparametre {
+    grid-template-rows: 30px 50px 150px 50px 100px 30px 40px;
+    grid-template-columns: 30px 80px 40px 30px 70px 30px 60px 40px 70px 60px 40px 35px 30px; 
+}
+
+.tableau > div {
+    border: 3px solid black;
+}
+/* permet de cacher les 34 numéros */
+div p {
+    display: none;
+}
+.item1 { 
+    grid-area: 1 / 1 / 3 / 2;
+    
+}
+.item2 { 
+    grid-area: 7 / 1 / 8 / 4; 
+}
+.item3 { 
+    grid-area: 5 / 1 / 7 / 2; 
+}
+.item4 { 
+    grid-area: 3 / 1 / 5 / 2; 
+}
+.item5 { 
+    grid-area: 3 / 2 / 5 / 3; 
+}
+.item6 { 
+    grid-area: 5 / 2 / 7 / 3; 
+}
+.item7 { 
+    grid-area: 3 / 3 / 7 / 4; 
+}
+.item8 { 
+    grid-area: 5 / 4 / 8 / 5; 
+}
+.item9 { 
+    grid-area: 4 / 4 / 5 / 5; 
+}
+.item10 { 
+    grid-area: 3 / 4 / 4 / 6;
+}
+.item11 { 
+    grid-area: 3 / 6 / 4 / 7;
+}
+.item12 { 
+    grid-area: 4 / 5 / 5 / 7;
+}
+.item13 { 
+    grid-area: 2 / 2 / 3 / 7;
+}
+.item14 { 
+    grid-area: 1 / 2 / 2 / 7;
+}
+.item15 { 
+    grid-area: 6 / 5 / 8 / 7;
+}
+.item16 { 
+    grid-area: 5 / 5 / 6 / 8;
+}
+.item17 { 
+    grid-area: 4 / 7 / 5 / 9;
+}
+.item18 { 
+    grid-area: 3 / 7 / 4 / 9;
+}
+.item19 { 
+    grid-area: 2 / 7 / 3 / 9;
+}
+.item20 {
+    grid-area: 1 / 13 / 4 / 14; 
+}
+.item21 {
+    grid-area: 1 / 12 / 4 / 13; 
+}
+.item22 {
+    grid-area: 4 / 12 / 5 / 14; 
+}
+.item23 {
+    grid-area: 6 / 10 / 8 / 14; 
+}
+.item24 {
+    grid-area: 6 / 7 / 8 / 10;
+}
+.item25 {
+    grid-area: 1 / 7 / 2 / 12; 
+}
+.item26 {
+    grid-area: 2 / 9 / 3 / 12; 
+}
+.item27 {
+    grid-area: 3 / 11 / 4 / 12; 
+}
+.item28 {
+    grid-area: 3 / 9 / 4 / 11; 
+}
+.item29 {
+    grid-area: 4 / 11 / 5 / 12; 
+}
+.item30 {
+    grid-area: 4 / 9 / 5 / 11; 
+}
+.item31 {
+    grid-area: 5 / 12 / 6 / 14; 
+}
+.item32 {
+    grid-area: 5 / 11 / 5 / 12; 
+}
+.item33 {
+    grid-area: 5 / 10 / 6 / 11; 
+}
+.item34 {
+    grid-area: 5 / 8 / 6 / 12; 
+}
